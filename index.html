@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new3.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Regisration</header>
+
+        <div class="good" >
+
+            <div class="details personal">
+                <h1 class="title">Personal Details</h1>
+
+                <div class="fields">
+                    <div class="input-field">
+                        <label>Full Name</label>
+                        <input type="text" id="name" name="n" placeholder="Enter your name">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Date of Birth</label>
+                        <input type="text" id="date" name="d" placeholder="Enter birth date">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Email</label>
+                        <input type="text" id="email" name="e" placeholder="Enter your email">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Mobile Number</label>
+                        <input type="number" id="mobile" name="m" placeholder="Enter mobile number">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Gender</label>
+                        <input type="text" id="gender" name="g" placeholder="Enter your gender">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Occupation</label>
+                        <input type="text" id="Occupation" name="o" placeholder="Enter Occupation">
+                    </div>
+                </div>
+            </div>
+
+            <div class="details ID">
+                <span class="title">Identity Details</span>
+
+                <div class="fields">
+                    <div class="input-field">
+                        <label>ID Type</label>
+                        <input type="text" id="ID_type" name="t" placeholder="Enter ID type" class="inp">
+                    </div>
+
+                    <div class="input-field">
+                        <label>ID Number</label>
+                        <input type="number" id="ID_number" name="nu" placeholder="Enter ID number">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Issue Authority</label>
+                        <input type="text" id="Authority" name="a" placeholder="Enter issue department">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Issue Date</label>
+                        <input type="text" id="ID_issue_date" name="is" placeholder="Enter ID issue date">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Issue State</label>
+                        <input type="text" id="State" name="s" placeholder="Enter ID issue State">
+                    </div>
+
+                    <div class="input-field">
+                        <label>Expiry Date</label>
+                        <input type="text" id="expiry_date" name="ex" placeholder="Enter ID expiry date">
+                    </div>
+                </div>
+
+                <button class="subimt" type="submit" onclick="validateForm()">
+                    <span>Next&#8702;</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // let n = document.getElementById("name").value
+    // let d = document.getElementById("date").value
+    // let e = document.getElementById("email").value
+    // let m = document.getElementById("mobile").value
+    // let g = document.getElementById("gander").value
+    // let o = document.getElementById("Occupation").value
+
+    // let t = document.getElementById("ID_type").value
+    // let nu = document.getElementById("ID_number").value
+    // let a = document.getElementById("Authority").value
+    // let is = document.getElementById("ID_issue_date").value
+    // let s = document.getElementById("State").value
+    // let ex = document.getElementById("expiry_date").value
+
+
+
+    function validateForm() {
+        if (name === "" || date === "" || email === "" || mobile === "" || gender === "" || Occupation === "" || type === "" || number === "" || Authority === "" || issue === "" || State === "" || expiry === "") {
+            document.getElementById("name").style.borderColor = "red"
+            document.getElementById("date").style.borderColor = "red"
+            document.getElementById("email").style.borderColor = "red"
+            document.getElementById("mobile").style.borderColor = "red"
+            document.getElementById("gander").style.borderColor = "red"
+            document.getElementById("Occupation").style.borderColor = "red"
+            document.getElementById("ID_type").style.borderColor = "red"
+            document.getElementById("ID_number").style.borderColor = "red"
+            document.getElementById("Authority").style.borderColor = "red"
+            document.getElementById("ID_issue_date").style.borderColor = "red"
+            document.getElementById("State").style.borderColor = "red"
+            document.getElementById("expiry_date").style.borderColor = "red"
+
+            alert("hello")
+            return false;
+        }
+        return true;
+    } 
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- 
+
+function validateForm() {
+    if (name === "" || date === "" || email === "" || mobile === "" || gender === "" || Occupation === "" || type === "" || number === "" || Authority === "" || issue === "" || State === "" || expiry === "") {
+        alert("hello")
+        return false;
+    }
+    return true;
+} -->
