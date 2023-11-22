@@ -140,38 +140,28 @@ body {
 
 
 
-
 @media screen and (max-width:450px) {
-    body{ 
+    body{
         height: 1330px;
     }
+    
     .container .good .fields {
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .container {
-        width: 550px;
+        width: 600px;
         height: 1300px;
-        margin-left: -10px;
         margin-top: -110px;
+        /* margin-left: -290px; */
     }
 
     .good .fields .input-field {
         width: calc(100% / 1 - 15px);
     }
-    .input-field input{
-        width: 270px;
-    }
 
-} 
-
-@media screen and (max-width:768px) and (min-width:450px) {
-    .container {
-        width: 330px;
+    .input-field input {
+        width: 530px;
     }
-    body{
-        height: 1000px;
-    }
-   
 }
