@@ -141,8 +141,8 @@ body {
 
 
 
-@media screen and (max-width:600px) {
-    body{
+@media screen and (max-width:450px) {
+    body{ 
         height: 1330px;
     }
     .container .good .fields {
@@ -151,11 +151,10 @@ body {
     }
 
     .container {
-        width: 330px;
+        width: 550px;
         height: 1300px;
+        margin-left: -10px;
         margin-top: -110px;
-        
-        
     }
 
     .good .fields .input-field {
@@ -165,11 +164,14 @@ body {
         width: 270px;
     }
 
-}
+} 
 
 @media screen and (max-width:768px) and (min-width:450px) {
     .container {
-        width: 620px;
+        width: 330px;
+    }
+    body{
+        height: 1000px;
     }
    
 }
